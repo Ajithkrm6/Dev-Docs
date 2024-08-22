@@ -22,4 +22,17 @@
 
    - search **mysql2** and install to make db connection.
 
+   - search dotenv and install, by this approch we can hide confidential details.
+
+   - once after installing create file in root with name **.env**, when we make changes in .env we have to **_restart the server_**
+
 3. In the terminal use command `npm install express-generator` with this command we can create the recommended project skeleton.
+
+# Folder Structure:
+
+- controllers
+
+- routes --> all the routes will be created in folder for example
+  - login.js
+  - signup.js
+  - users.js

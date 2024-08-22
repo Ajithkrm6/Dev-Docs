@@ -42,9 +42,9 @@ Copy code
 1. First item
 2. Second item
 
-   1. Subitem 2.1
+3. Subitem 2.1
 
-3. **Code**
+4. **Code**
    Inline Code: Use single backticks ` for inline code.
 
 markdown
