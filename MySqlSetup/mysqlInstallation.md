@@ -12,9 +12,11 @@
 10. Once done we have to add the env variable for that click on **_windows_** --> **_edit system environment variables_** --> click on **_Envirnoment variables_** --> in **systems variables** double click on **path** --> click on **New** and paste the path which might look like cdrive/ProgrammingFiles/MYSQL/mySql-server/bin --> click ok --> click ok --> click ok.
 11. Open cmd and check version my using command **_mysql --version_**.
 12. In cmd enter `mysql -u root -p` and enter the root passowrd in my case 8**\*\*\***96@A\*i and hit enter then you can see as below.
+    ```
     Welcome to the MySQL monitor. Commands end with ; or \g.
     Your MySQL connection id is 11
     Server version: 8.0.39 MySQL Community Server - GPL
+    ```
 
 Copyright (c) 2000, 2024, Oracle and/or its affiliates.
 
@@ -22,4 +24,7 @@ Oracle is a registered trademark of Oracle Corporation and/or its
 affiliates. Other names may be trademarks of their respective
 owners.
 
+```
+
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+```
