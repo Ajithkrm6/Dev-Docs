@@ -22,11 +22,45 @@
 
    - search **mysql2** and install to make db connection.
 
-   - search dotenv and install, by this approch we can hide confidential details.
+   - search dotenv and install, by this approch we can hide confidential details
+     `dotenv.config()`
 
-   - once after installing create file in root with name **.env**, when we make changes in .env we have to **_restart the server_**
+   - once after installing create file in root directory with name **.env**, next in app.js or index.js configure the dot env my importing,
 
-3. In the terminal use command `npm install express-generator` with this command we can create the recommended project skeleton.
+   ```
+   const dotenv = require('dotenv');
+   dotnev.config();
+   ```
+
+   when we make changes in .env we have to **_restart the server_**
+
+   The package.jon must look like:
+
+   ```
+   {
+   "name": "backendtest",
+   "version": "0.0.0",
+   "private": true,
+   "scripts": {
+    "start": "node ./bin/www",
+    "server": "nodemon app.js"
+   },
+   "dependencies": {
+    "colors": "^1.4.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.11.0",
+    "nodemon": "^3.1.4"
+   }
+   }
+   ```
+
+3. In the terminal use command `npx express-generator  or  npm i express-generator` with this command we can create the recommended project skeleton.
 
 # Folder Structure:
 
@@ -36,3 +70,7 @@
   - login.js
   - signup.js
   - users.js
+
+```
+
+```
