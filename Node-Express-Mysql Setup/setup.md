@@ -64,10 +64,12 @@
 
 # Folder Structure:
 
-- controllers
+- controllers --> All the business logic will be there in the controllers
+
+  - userController.ts
 
 - routes --> all the routes will be created in folder for example
-  - login.js
+  - login.js ```ex:router.get("/create-user",createuser)
   - signup.js
   - users.js
 
