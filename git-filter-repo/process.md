@@ -1,36 +1,50 @@
-```
 # Step 1: Clone git-filter-repo
+
 ```
 
 cd C:\Users\Ajith
 git clone https://github.com/newren/git-filter-repo.git
 
+```
+
 # Step 3: Test if git-filter-repo is working
 
+```
 git filter-repo --help
+```
 
 # OR (if not in PATH)
 
+```
 python C:/Users/Ajith/git-filter-repo/git-filter-repo.py --help
+```
 
 # Step 4: Remove the folder from history
 
+```
 cd path/to/your/nextjs-project
 python C:/Users/Ajith/git-filter-repo/git-filter-repo.py --path public/videos --invert-paths
 
+if it did work
+git-filter-repo --path public/videos --invert-paths --force
+```
+
 # Step 5: Force push the changes
 
+```
 git push origin --force --all
 
-````
+```
+
 Let's go through a few troubleshooting steps to make sure the file is fully removed from your Git history and then push the changes.
 
 Step 1: Double-check that the file is removed from the history
+
 Run this command to check if the file is still in the history:
 
 ```bash
 git rev-list --all --objects | grep "public/videos/BiriyaniFinalCut.mp4"
-````
+```
 
 If the file appears in the output, it means it's still in the history. If it doesn't appear, you may just need to clear the cache and try pushing again.
 
